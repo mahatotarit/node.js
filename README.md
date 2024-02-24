@@ -19,24 +19,23 @@ Node.js: A powerful JavaScript runtime environment that allows server-side scrip
 ```
 ### 2. Install NPM
 ### 3. Create a `index.js` file
-* Create node server
+* Create node server:
 
 ```
 const http = require('http');
 
-const PORT = 3000;
+const PORT = 80;
 
 const server = http.createServer((req, res) => {
-
-res.send('Nodejs server running...');
-res.end();
-
+  res.write('Nodejs server running...');
+  res.end();
 });
 
 server.listen(PORT);
 ```
 
 ### 4. Run `index.js` file on your terminal
+* Using this commond:
 ```
 node index.js
 ```
@@ -44,7 +43,7 @@ node index.js
 ### 5. Open your web browser and test the server
 * Visit the following URL:
 ```
-localhost:3000
+localhost:80
 ```
 
 ### 🎉 Node.js project created successfully! 🚀
